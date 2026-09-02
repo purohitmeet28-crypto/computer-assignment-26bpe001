@@ -3,19 +3,15 @@
 
 void main()
 {
-int a,b;
-clrscr();
-printf("Enter 2 values:");
-scanf("%d %d",&a,&b);
-
-if(a>b)
-printf("%d>%d\n",a,b);
-else
-if(a<b)
-   printf("%d>%d\n",b,a);
-   else
-   printf("%d=%d\n",a,b);
-
-   getch();
-   }
-
+  int n,q,r;
+  clrscr();
+  printf("Enter a value:");
+  scanf("%d",&n);
+  q = n / 7;
+  r = n - q * 7;
+  if (r == 0)
+  printf("%d is divisble by 7.\n",n);
+  else
+  printf("%d is not divisible bt 7.\n",n);
+  getch();
+  }
